@@ -1,0 +1,87 @@
+body {
+    background: linear-gradient(120deg, #1f2933, #111827);
+    font-family: system-ui;
+    color: white;
+}
+
+.app-shell {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    min-height: 100vh;
+}
+
+aside {
+    background: rgba(255, 255, 255, .06);
+    padding: 20px;
+}
+
+.brand {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.toolbar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.toolbar input,
+.toolbar select,
+.toolbar button {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+}
+
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.tile {
+    background: rgba(255, 255, 255, .08);
+    padding: 12px;
+    border-radius: 14px;
+    backdrop-filter: blur(8px);
+    transition: .25s;
+}
+
+.tile:hover {
+    transform: translateY(-6px);
+}
+
+.tile img {
+    height: 120px;
+    object-fit: contain;
+}
+
+.tile button {
+    margin-top: 8px;
+    width: 100%;
+    background: #22c55e;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.basket {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.line {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.total {
+    margin-top: auto;
+    border-top: 1px solid rgba(255, 255, 255, .2);
+    padding-top: 10px;
+}
